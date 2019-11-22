@@ -1,0 +1,188 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+	- var tphone = '8 (911) 999-22-33'
+	- var mail = 'mail@kadastr.ru'
+
+block content
+	section.carousel
+		.owl-carousel.owl-loaded
+			.owl-stage-outer
+				.owl-stage
+					.carousel__item.owl-item#item_0(style="background-image: url('../static/images/content/slide_1.jpg');")
+						.carousel__inner.container.d-flex.justify-content-center.flex-column
+							h3 Заголовок 1
+							p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, aliquam! Quos assumenda eius non praesentium suscipit, excepturi laudantium consectetur quas ad? Laudantium saepe libero aliquam earum magnam temporibus. Laudantium, voluptatibus.
+					.carousel__item.owl-item#item_1(style="background-image: url('../static/images/content/slide_2.jpg');")
+						.carousel__inner.container.d-flex.justify-content-center.flex-column
+							h3 Заголовок 2
+							p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, aliquam! Quos assumenda eius non praesentium suscipit, excepturi laudantium consectetur quas ad? Laudantium saepe libero aliquam earum magnam temporibus. Laudantium, voluptatibus.
+
+	section.services.py-5
+		.services__title.mb-md-5
+			h1.title-container Кадастровые и геодезические услуги на территории Москвы и Московской области
+		.container
+			.row.services__card__row
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-1.jpg');")
+						h2 Кадастровые работы
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-1-icon.png');")
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-2.jpg');")
+						h2 Геодезическая съемка
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-2-icon.png');")
+			.row.services__card__row
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-3.jpg');")
+						h2 Строительство и стройматериалы
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-3-icon.png');")
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-4.jpg');")
+						h2 Продажа недвижимости
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-4-icon.png');")
+			.row.services__card__row
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-5.jpg');")
+						h2 Проектирование и согласование планировок квартир
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-5-icon.png');")
+				.services__card.col-12.col-lg-6.align-strech.text-light
+					.services__card__inner.box-shadow(style="background-image: url('static/images/content/uslugi-6.jpg');")
+						h2 Ландшафтный дизайн
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum maxime perspiciatis repellendus voluptatem enim, facere, possimus neque inventore commodi laboriosam nemo. Velit voluptas pariatur nam dolore. Assumenda, nostrum eos.
+						a(href="#!") Подробнее...
+					.service__card__img(style="background-image: url('static/images/content/uslugi-6-icon.png');")
+
+	section.sale-block.py-2.p-lg-4.shadow
+		.container
+			.row
+				.col-12.col-lg-7.d-flex.justify-content-center.align-items-center.py-2.py-lg-0
+					p.text-uppercase.text-light.text-center.text-lg-left комплекс кадастровых услуг + что-то в подарок или со скидкой 50%
+				.col-12.col-lg-5.d-flex.justify-content-center.justify-content-lg-end.align-items-center.py-2.py-lg-0
+					.consultation__btn
+						button.cons-btn(data-toggle="modal" data-target="#exampleModal") Заказать
+					
+	section.advantages.py-4
+		.advantages__title.mb-md-4
+			h2.title-container преимущества работы с нами
+		.advantages__grid-container.grid-container.container
+			.advantages__grid-container__grid-item.grid-item.d-flex.box-shadow.hover-transform-top
+				.advantages__grid-container__grid-item__img
+					img(src="../static/images/content/adv-icon-1.png", alt="", width="90")
+				.advantages__grid-container__grid-item__text
+					h4 Быстрые сроки выполнения работ
+					p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam reprehenderit illum assumenda nostrum eos dolorem eaque sit, facere magni expedita fugiat alias, voluptas rem quo pariatur maiores, placeat vitae. Debitis?
+			.advantages__grid-container__grid-item.grid-item.d-flex.box-shadow.hover-transform-top
+				.advantages__grid-container__grid-item__img
+					img(src="../static/images/content/adv-icon-2.png", alt="", width="90")
+				.advantages__grid-container__grid-item__text
+					h4 Цены ниже рыночных
+					p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam reprehenderit illum assumenda nostrum eos dolorem eaque sit, facere magni expedita fugiat alias, voluptas rem quo pariatur maiores, placeat vitae. Debitis?
+			.advantages__grid-container__grid-item.grid-item.d-flex.box-shadow.hover-transform-top
+				.advantages__grid-container__grid-item__img
+					img(src="../static/images/content/adv-icon-3.png", alt="", width="90")
+				.advantages__grid-container__grid-item__text
+					h4 Команда проверенных специалистов
+					p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam reprehenderit illum assumenda nostrum eos dolorem eaque sit, facere magni expedita fugiat alias, voluptas rem quo pariatur maiores, placeat vitae. Debitis?
+
+
+	section.how-we-work.py-md-4
+		.how-we-work__title
+			h2.title-container как мы работаем
+		.container.how-we-work__grid
+			.how-we-work__grid__item#work-item-1.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media.align-self-
+					.work__img-div
+						img(src="../static/images/content/work-icon-1.png" alt="", width="80")
+					.media-body
+						p Вы оставляете заявку на нашем сайте или по телефону <br> #[a(href="tel" +tphone) #{tphone}]. Наш менеджер связывается с вами для уточнения деталей.
+			.how-we-work__grid__item#work-item-2.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media
+					.work__img-div
+						img(src="../static/images/content/work-icon-2.png" alt="", width="80")
+					.media-body
+						p Личная встреча. Подробное изучение деталей и возможных "подводных камней" проекта
+			.how-we-work__grid__item#work-item-3.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media.align-self-center
+					.work__img-div
+						img(src="../static/images/content/work-icon-3.png" alt="", width="80")
+					.media-body
+						p Заключение договора. Внесение 50% предоплаты за проект
+			.how-we-work__grid__item#work-item-4.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media.align-self-center
+					.work__img-div
+						img(src="../static/images/content/work-icon-6.png" alt="", width="80")
+					.media-body
+						p Подписание акта выполненых работ. Оплата оставшихся 50%
+			.how-we-work__grid__item#work-item-5.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media.align-self-center
+					.work__img-div
+						img(src="../static/images/content/work-icon-5.png" alt="", width="80")
+					.media-body
+						p Демонстрация проектов документов
+			.how-we-work__grid__item#work-item-6.box-shadow.hover-transform-top
+				.how-we-work__grid__item__inner.media.align-self-center
+					.work__img-div
+						img(src="../static/images/content/work-icon-4.png" alt="", width="80")
+					.media-body
+						p Выезд на объект. Проведение необходимых работ и составление документации
+				
+
+
+
+	section.about.py-md-5
+		.container
+			.about__grid-container
+				.about__container-left.box-shadow
+					.about__container-left__inner
+						h2.text-center.text-lg-right.text-uppercase кто мы? и чем занимаемся?
+						<hr>
+						p.text-justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel maxime, ex itaque aperiam quidem qui distinctio laborum ipsum sed atque numquam expedita tempore eligendi! Consectetur eum iure hic recusandae. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo numquam eaque nam consectetur aspernatur, corrupti incidunt deserunt. Repellat, esse doloribus, quis quod suscipit aut aliquam nesciunt doloremque, exercitationem similique nostrum.
+						.about__btn
+							a(href="#!" class="mt-md-3") Подробнее
+				.about__container-right.box-shadow
+					.about__container-right__img-div(style="background-image: url('../static/images/content/about-bg.jpg');")
+
+
+
+	section.consultation
+		.container
+			.row.consultation__flex-row
+				.col-md-5.consultation-text__container
+					.consultation__title
+						h3.text-uppercase Остались вопросы<span class="color-titile">?</span>
+						h3 Закажите<br><span class="color-titile">бесплатную<br>консультацию</span>
+						p Оставьте свои контакты, мы свяжемся с вами в ближайшее время.
+						img(src="../static/images/content/arrow-line.png", alt="")
+				.col-md-7.consultation-form__container.d-flex
+					form(id="consultation-form" action="")
+						.form__line
+							.form__line__item
+								input(class="form-input" type="text" placeholder="Имя*")
+							.form__line__item
+								input(class="form-input" type="tel" placeholder="Номер телефона*")
+						.form__line
+							.form__line__item
+								input(class="form-input" type="email" placeholder="E-mail*")
+							.form__line__item
+								select.form-input
+									option(value="1") Кадастровые
+									option(value="2") Геодезия
+									option(value="3") Стройка
+						.form__line
+							.form__line__item
+								textarea(name="comment" placeholder="Комментарий" class="form-input")
+						.form__line
+							.form__line__item
+								input(class="form-submit-btn box-shadow" type="submit", value="Отправить")

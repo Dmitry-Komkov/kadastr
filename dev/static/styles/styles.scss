@@ -1,0 +1,109 @@
+@import "utils/bootstrap";
+@import "utils/owl-carousel.min";
+@import "utils/owl-theme";
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+
+
+html {
+  height: 100%;
+}
+
+body { 
+  height: 100%; 
+  font-size: $base-font-size;
+  font-family: $fira;
+  background-color: $body;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+a { text-decoration: none; transition: 0.3s; }
+
+p { margin: 0; font-weight: 300;}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; transition: 0.3s; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content { flex: 1 0 auto; }
+
+.container {
+  margin: 0 auto;
+  max-width: $content-size;
+  width: 100%;
+}
+
+.align-strech {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.title-container {
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+  margin: 0 0 30px 10%;
+  border-bottom: 3px solid $primary;
+  color: $darkgray;
+  font-size: 1.2em;
+  @media screen and (min-width: 1240px) {
+    margin: 0 0 30px 25%;
+    font-size: 2em;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 4px 4px 2px rgba(0,0,0, 0.3);
+}
+.box-shadow-bot {
+  box-shadow: 0 10px 10px 0px rgba(221, 221, 221, 0.3);
+}
+
+.hover-transform-top {
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+}
+
+.grid-container {
+  @include grid-center();
+}
+
+//Модули
+@import "modules/modules";
+
+//Bootstrap
+

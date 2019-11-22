@@ -1,0 +1,111 @@
+footer { 
+    flex: 0 0 auto; 
+    padding: 10px 0 0 0;
+    border-top: 1px solid rgb(161, 161, 161);
+    .title {
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-bottom: 0.8em;
+    }
+    .footer__row__bottom {
+        background-color: rgba(13,55,66,1);
+        padding: 25px 0;
+        color: white;
+    }
+}
+.footer__container {
+    padding: 0 0 20px 0;
+    .footer__container__contacts {
+        padding: 0 60px;
+        p, a {
+            padding-bottom: 20px;
+            font-weight: 400;
+            color: $darkgray;
+        }
+        a {
+            color: $bright-rasp;
+            &:hover {
+                color: $primary;
+            }
+        }
+        .address {
+            @include relative();
+            &:before {
+                content: url('../images/content/address.png');
+                display: block;
+                @include absolute();
+                left: -30px;
+                top: -5px;
+            }
+        }
+        .phone {
+            @include relative();
+            &:before {
+                content: url('../images/content/telephone-foot.png');
+                display: block;
+                @include absolute();
+                left: -30px;
+                top: -5px;
+            }
+        }
+        .email {
+            @include relative();
+            &:before {
+                content: url('../images/content/mail.png');
+                display: block;
+                @include absolute();
+                left: -30px;
+                top: -5px;
+            }
+        }
+        .ogrn {
+            @include relative();
+            &:before {
+                content: url('../images/content/documents.png');
+                display: block;
+                @include absolute();
+                left: -30px;
+                top: -5px;
+            }
+        }
+    }
+    .footer__container__services {
+        padding: 0 60px;
+        li {
+            padding-bottom: 10px;
+
+            a{
+                color: $darkgray;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .footer__container__socials{
+        padding: 0 60px;
+    }
+    @media screen and (min-width: 1240px) {
+        padding: 40px 0 0 0;
+        .footer__container__contacts {
+            padding: 0 40px;
+        }
+        .footer__container__services {
+            padding: 0;
+        }
+        .footer__container__socials {
+            padding: 0;
+        }
+    }
+}
+.icon-vk {
+    margin-right: 2vh;
+    &:hover {
+        fill: #4a76a8;
+    }
+}
+.icon-instagram-logo {
+    &:hover {
+        fill: #db2d77;
+    }
+}

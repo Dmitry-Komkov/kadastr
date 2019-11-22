@@ -1,0 +1,36 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$primary: rgb(19, 78, 94);
+$primarydark: rgba(13,55,66,1);
+$secondary: rgb(113, 178, 128);
+$primary-bright: rgba(0, 134, 1,1);
+$primary-bright20: rgba(0, 134, 1, 0.2);
+$primary20: rgba(19, 78, 94, 0.199);
+$bright-rasp: rgb(253, 5, 58);
+$darkmain: #0A111B;
+$darkgray: rgb(56, 56, 56);
+$lightgray: rgb(121, 121, 121);
+$body: rgb(243, 243, 243);
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1240px;
+
+// Fonts
+
+$roboto: 'Roboto', sans-serif;
+$fira: 'Fira Sans Extra Condensed', sans-serif;
+$source-sans-pro: 'Source Sans Pro', sans-serif;

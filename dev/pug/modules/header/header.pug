@@ -1,0 +1,24 @@
+header.header
+    .header__top.container.py-4
+        .row.align-items-center
+            .header__logo.col-6.col-lg-2
+                .header__logo__div
+                    a(href="#!")
+                        img(src="../../../static/images/content/site-logo.png", alt="")
+            .header__title.col-6.col-lg-4
+                p Все виды кадастровых услуг в Москве и МО
+            .header__phone.col-6.col-lg-3
+                span.phone-btn
+                    a( href="tel:8 (999) 111-22-33") 8 (999) 111-22-33
+            .header__button.col-6.col-lg-3
+                a(class="header__button_phone" href="#!") Заказать звонок
+    
+    .header__bot.box-shadow-bot
+        nav.header__nav.container.navbar.navbar-expand-lg.navbar-dark
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarHeader.justify-content-center
+                ul.navbar-nav
+                    each val in ['Главная', 'Услуги', 'О нас', 'Проекты и отзывы', 'Контакты']
+                        li.nav-item.px-5
+                            a(class="nav-link" href="#!")= val

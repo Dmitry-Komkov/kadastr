@@ -1,0 +1,31 @@
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+};
+
+@mixin bg-img() {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin absolute() {
+  position:absolute;
+}
+
+@mixin relative() {
+  position: relative;
+}
+
+@mixin grid-center() {
+  display:grid;
+  align-content: center;
+  justify-content: center;
+}
