@@ -439,29 +439,29 @@
     }
     .consultation-form__container {
         background-color: white;
-        #consultation-form {
-            flex-basis: 100%;
-            align-self: center;
-            .form__line {
-                display: flex;
-                justify-content: stretch;
-                align-content: stretch;
-                .form__line__item {
-                    flex-basis: 100%;
-                    padding: 10px 10px;
-                    .form-input {
-                        width: 100%;
-                        padding: 8px 15px;
-                        border: 1px solid #E5E5E5;
-                        border-radius: 10px;
-                        font-size: .8em;
-                        &:hover, &:focus {
-                            box-shadow: -2px -2px 2px 4px $primary-bright20, -1px -1px 2px 3px $primary20, 1px 1px 2px 3px $primary20, 2px 2px 2px 4px $primary-bright20;
-                        }
-                    }
-                }
-            }
-        }
+        // #consultation-form {
+        //     flex-basis: 100%;
+        //     align-self: center;
+        //     .form__line {
+        //         display: flex;
+        //         justify-content: stretch;
+        //         align-content: stretch;
+        //         .form__line__item {
+        //             flex-basis: 100%;
+        //             padding: 10px 10px;
+        //             .form-input {
+        //                 width: 100%;
+        //                 padding: 8px 15px;
+        //                 border: 1px solid #E5E5E5;
+        //                 border-radius: 10px;
+        //                 font-size: .8em;
+        //                 &:hover, &:focus {
+        //                     box-shadow: -2px -2px 2px 4px $primary-bright20, -1px -1px 2px 3px $primary20, 1px 1px 2px 3px $primary20, 2px 2px 2px 4px $primary-bright20;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
     @media screen and (min-width: 1240px) {
         .consultation-text__container {
@@ -477,19 +477,19 @@
                 }
             }
         }
-        .consultation-form__container {
-            #consultation-form {
-                .form__line {
-                    .form__line__item{
-                        .form-input {
-                            width: 100%;
-                            padding: 25px 30px;
-                            font-size: 1em;
-                        }
-                    }
-                } 
-            }
-        }
+        // .consultation-form__container {
+        //     #consultation-form {
+        //         .form__line {
+        //             .form__line__item{
+        //                 .form-input {
+        //                     width: 100%;
+        //                     padding: 25px 30px;
+        //                     font-size: 1em;
+        //                 }
+        //             }
+        //         } 
+        //     }
+        // }
     }
 }
 .cons-btn {
@@ -514,5 +514,40 @@
     &:hover:before {
         content: url('../images/content/consultation-icon-w.png');
         display: block;
+    }
+}
+
+.contact-form {
+    flex-basis: 100%;
+    align-self: center;
+    .form__line {
+        display: flex;
+        justify-content: stretch;
+        align-content: stretch;
+        .form__line__item {
+            flex-basis: 100%;
+            padding: 10px 10px;
+            .form-input {
+                width: 100%;
+                padding: 8px 15px;
+                border: 1px solid #E5E5E5;
+                border-radius: 10px;
+                font-size: .8em;
+                &:hover, &:focus {
+                    box-shadow: -2px -2px 2px 4px $primary-bright20, -1px -1px 2px 3px $primary20, 1px 1px 2px 3px $primary20, 2px 2px 2px 4px $primary-bright20;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1240px) {
+        .form__line {
+            .form__line__item{
+                .form-input {
+                    width: 100%;
+                    padding: 25px 30px;
+                    font-size: 1em;
+                }
+            }
+        }
     }
 }
