@@ -1,22 +1,22 @@
 footer.footer
     .footer__container.container
         .row
-            .col-12.col-lg-2.footer__container__logo.px-0.px-lg-2.d-flex.justify-content-center.justify-content-lg-start.mt-2.mt-lg-0
+            .col-12.col-md-2.footer__container__logo.px-0.px-md-2.d-flex.justify-content-center.justify-content-md-start.mt-2.mt-md-0
                 a(href="#!")
                     img(src="../../../static/images/content/site-logo.png", alt="" width="180")
-            .col-12.col-lg-4.footer__container__contacts.mt-2.mt-lg-0
+            .col-12.col-md-4.footer__container__contacts.mt-2.mt-md-0
                 h4.text-uppercase.title контакты
                 p.address Москва, м. Аннино
                 a.phone(style="display: block;" href="tel:"+tphone) #{tphone}
                 a.email(style="display: block;" href="mailto:"+mail) #{mail}
                 p.ogrn ОГРНИП:
-            .col-12.col-lg-4.footer__container__services.mt-2.mt-lg-0
+            .col-12.col-md-4.footer__container__services.mt-2.mt-md-0
                 h4.text-uppercase.title услуги
                 nav.footer__nav.nav.flex-column
                     each val in ['Кадастровые работы', 'Геодезическая съемка', 'Строительство и стройматериалы', 'Продажа недвижимости']
                         li.nav-item
                             a(class="nav-link px-0 py-1" href="#!")= val
-            .col-12.col-lg-2.footer__container__socials.mt-2.mt-lg-0
+            .col-12.col-md-2.footer__container__socials.mt-2.mt-md-0
                 h4.text-uppercase.title социальные сети
                 .footer__container__socials__icons.mt-2
                     a(href="#!")
@@ -26,7 +26,7 @@ footer.footer
     .footer__row__bottom
         .container
             .row
-                .col-12.col-lg-6.footer__row__bottom__copyright
+                .col-12.col-md-6.footer__row__bottom__copyright
                     p &#169; 2019 ООО "Кадастровые работы"
-                .col-12.col-lg-6.footer__row__bottom__developed.mt-2.mt-lg-0
-                    p.text-lg-right Сайт разработан:
+                .col-12.col-md-6.footer__row__bottom__developed.mt-2.mt-md-0
+                    p.text-md-right Сайт разработан:

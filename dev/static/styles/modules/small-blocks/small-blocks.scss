@@ -57,17 +57,17 @@
     }
 
 }
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 768px) {
     .owl-carousel {
         .carousel__item {
             @include size(100%, 500px);
 
             h3 {
                 text-align: left;
-                font-size: 4em;
+                font-size: 2.5em;
             }
             p {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 width: 50%;
                 text-align: left;
             }
@@ -246,7 +246,7 @@
         }
     }
 
-    @media screen and (min-width: 1240px) {
+    @media screen and (min-width: 768px) {
         .advantages__grid-container {
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 1.5vw;
@@ -317,7 +317,7 @@
             }
         }
     }
-    @media screen and (min-width: 1240px) {
+    @media screen and (min-width: 768px) {
         .how-we-work__grid {
             display: grid;
             grid-template-rows: 1fr 1fr;
@@ -400,7 +400,7 @@
             background-color: $secondary;
         }
     }
-    @media screen and (min-width: 1240px) {
+    @media screen and (min-width: 768px) {
         margin: 0;
         .about__grid-container {
             grid-template-columns: 1fr 1fr;
