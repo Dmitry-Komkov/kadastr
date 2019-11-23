@@ -190,6 +190,30 @@
     }
 }
 
+// Модальное окно
+.modal{
+    button.close {
+        background-color: #6c757d;
+        border: none;
+        padding: .25em .5em;
+        &:hover {
+            background-color: $secondary;
+        }
+        span {
+            font-size: 2em;
+            line-height: 1em;
+            color: white;
+        }
+    }
+    .modal-footer {
+        button {
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
 // Преимущества
 
 .advantages {
